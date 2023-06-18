@@ -1,2 +1,2 @@
 #!/bin/bash
-CFILE="your_c_file.c" && gcc -c "$CFILE" -o "$(basename "$CFILE" .c).o"
+gcc -c $CFILE -o 'echo $CFILE | cut -d. -f1'.o
