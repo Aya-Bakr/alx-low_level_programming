@@ -1,8 +1,15 @@
-#include <unistd.h>
+#include "main.h"
+/* main - Entry point
+ * Description: prints _putchar using putchar prototype
+ * Return: Always 0 (Success)
+*/
 
 int main(void)
 {
-const char message[] = "_putchar\n";
-write(1, message, sizeof(message) - 1);
+char str[] = "_putchar";
+int ch;
+for (ch = 0; ch < 8; ch++)
+	_putchar(str[ch]);
+_putchar('\n');
 return (0);
 }
