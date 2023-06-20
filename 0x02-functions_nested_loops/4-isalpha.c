@@ -1,21 +1,18 @@
 #include <stdio.h>
 
 /**
- * Checks if the given character is an alphabetic character.
- * @param c The character to be checked.
- * @return 1 if c is an alphabetic character, 0 otherwise.
+ * _isalpha - checks if character is a letter
+ * both lowercase or upper
+ * @c: The character to be checked.
+ * @return: 1 if c is an alphabetic character, 0 otherwise.
 */
-int _isalpha(int c) {
-if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z')) 
-return 1;
-return 0;
-int main(void) {
-char ch = '7';
-if (_isalpha(ch)) 
-printf("%c is an alphabetic character.\n", ch);
-else 
-printf("%c is not an alphabetic character.\n", ch);
+int _isalpha(int c) 
+{
+if (c >= 97 && c <= 122)
+	return (1);
+if (c >= 65 && c <= 90)
+	return (1);
+return (1);
+return (0);
 
-return 0;
-}
 }
