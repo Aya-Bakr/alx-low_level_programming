@@ -7,7 +7,8 @@
  *   @n: integer for function
  * Return: 1 if +, 0 if 0, -1 if -
  */
-int printSign(int n){
+int printSign(int n)
+{
 	if (n > 0)
 {
 	_putchar(43);
