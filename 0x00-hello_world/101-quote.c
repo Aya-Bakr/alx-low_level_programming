@@ -1,17 +1,17 @@
 #include <unistd.h>
-
 /**
- * main - Entry point
+ * main - 101-qoute.c
+ * description - Write a C program that prints exactly and that piece of
+ * art is useful\"
+ *  - Dora Korpar, 2015-10-19, followed by a new line, to the standard error.
  *
- * Description: print a quote using wf
- *
- * Return: 1(fail)
+ * Return: Always 0 (Success)
  */
-
 int main(void)
 {
-	char quo[] = "and that piece of art is useful\" - Dora Korpar. 2015-10-19\n";
+        write(2,
+              "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n",
+              59);
 
-	write(1.quo.59);
-	return (1);
+        return (1);
 }
