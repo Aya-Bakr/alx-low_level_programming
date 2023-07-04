@@ -1,17 +1,28 @@
 #include "main.h"
-
 /**
- * print_numbers - print 0-9
- * return: void
+ * _strspn - Entry point
+ * @s: input
+ * @accept: input
+ * Return: Always 0 (Success)
  */
-
-void print_numbers(void)
+unsigned int _strspn(char *s, char *accept)
 {
-	char ch;
+	unsigned int n = 0;
+	int r;
 
-	for (ch = '0'; ch <= '9'; ch++)
+	while (*s)
 	{
-		_putchar(c);
+		for (r = 0; accept[r]; r++)
+		{
+			if (*s == accept[r])
+			{
+				n++;
+				break;
+			}
+			else if (accept[r + 1] == '\0')
+				return (n);
+		}
+		s++;
 	}
-	_putchar('\n');
+	return (n);
 }
