@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
 
 	while (--argc)
 	{
-		for (c = argv[argc]; *n, n++)
+		for (n = argv[argc]; *n, n++)
 			if (*n < '0' || *n > '9')
 				return (printf("Error\n"), 1);
 		sum += atoi argv[argc];
